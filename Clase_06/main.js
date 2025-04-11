@@ -1,8 +1,18 @@
 /*
 ¿Cuál es la complejidad temporal de Merge Sort?
+O(n log n)
+
 ¿Por qué Merge Sort es un algoritmo estable?
+Porque durante la etapa de mezcla (merge), cuando hay empate, Merge Sort 
+elige primero el elemento de la izquierda (es decir, el que apareció
+antes en el arreglo original).
+
 ¿Cuándo no usarías Merge Sort en un proyecto real?
+- Tienes muy poca memoria.
+- El arreglo está casi ordenado.
+
 ¿Merge Sort es recursivo o iterativo?
+Recursivo 😆
 */
 console.log("Función Merge Sort, ejercicios");
 
@@ -106,7 +116,8 @@ function maxSubarraySum(arr, k){
     return maxSum;
 }
 
-const arraySum = [2,1,5,4,3,2,5,1]
+//const arraySum = [2,1,5,4,3,2,5,1]
+const arraySum = [2,1,5,1,3,2];
 console.log(maxSubarraySum(arraySum, 3));
 
 // -----------------Segundo ejemplo, dinámico---------------------------------
